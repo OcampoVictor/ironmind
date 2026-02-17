@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;700;900&display=swap');
+
+@theme {
+  --color-amber-500: #f59e0b;
+  --color-amber-600: #d97706;
+  --font-lexend: "Lexend", sans-serif;
+}
+
+:root {
+  background-color: black;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: var(--font-lexend);
+  background-color: black;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply uppercase tracking-tighter font-black;
+  }
+}
