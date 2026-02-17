@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Filter } from 'lucide-react';
+
 
 const categories = ["Todos", "CrossFit", "Boxeo", "Comunidad", "Instalaciones"];
 
@@ -46,13 +46,13 @@ const FancyGallery = () => {
 
                     {/* Filters */}
                     <div className="flex flex-wrap justify-center gap-4">
-                        {categories.map((cat, idx) => (
+                        {categories.map((cat) => (
                             <button
                                 key={cat}
                                 onClick={() => setActiveCategory(cat)}
                                 className={`px-6 py-2 rounded-full text-xs font-black uppercase tracking-widest transition-all duration-300 border ${activeCategory === cat
-                                        ? 'bg-amber-500 text-black border-amber-500 scale-110 shadow-[0_0_15px_rgba(245,158,11,0.5)]'
-                                        : 'bg-transparent text-neutral-500 border-neutral-800 hover:border-amber-500 hover:text-white'
+                                    ? 'bg-amber-500 text-black border-amber-500 scale-110 shadow-[0_0_15px_rgba(245,158,11,0.5)]'
+                                    : 'bg-transparent text-neutral-500 border-neutral-800 hover:border-amber-500 hover:text-white'
                                     }`}
                             >
                                 {cat}
