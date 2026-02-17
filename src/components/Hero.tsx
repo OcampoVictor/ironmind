@@ -35,8 +35,7 @@ const Hero = () => {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link to="/contacto">
                             <PremiumButton>
-                                Agenda tu clase gratis
-                                <ChevronRight className="w-5 h-5" />
+                                Elegir Clase Gratis
                             </PremiumButton>
                         </Link>
                         <button
